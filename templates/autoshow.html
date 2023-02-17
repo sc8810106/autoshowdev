@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ETAS SDV.OS</title>
+    <link rel="stylesheet" href="/static/main.88772dff.css">
+    <link rel="stylesheet" href="/static/codemirror.css">
+    <link rel="stylesheet" href="/static/codemirrorconfig/idea.css">
+    <script src="/static/codemirror.js"></script>
+    <script src="/static/codemirrorconfig/active-line.js"></script>
+    <script src="/static/codemirrorconfig/matchbrackets.js"></script>
+    <script src="/static/codemirrorconfig/python.js"></script>
+    <link rel="stylesheet" href="/static/xterm.min.css"/>
+    <script src="/static/xterm.min.js"></script>
+</head>
+<body>
+<div id="root">
+    <div class="flex h-full flex-col">
+        <main class="flex h-full flex-col">
+            <header class="flex" style="height:100px">
+                <img src="/static/header.png">
+            </header>
+            <div style="height: calc(100% - 350px);">
+                <div class="flex h-full w-full">
+                    <div class="flex flex-col w-2/6 h-full overflow-auto">
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span><strong>Vehicle</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-violet-600">branch</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.<strong>SpeedOp</strong></span>
+                                <div class="flex m-auto items-center justify-center bg-fuchsia-500 text-white rounded-xl w-4 h-4 ml-2 font-bold p-2"
+                                     style="font-size: 0.6rem; line-height: 0;">W
+                                </div>
+                                <span class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-yellow-500">actuator</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 !bg-aiot-blue !text-slate-50 hover:!bg-aiot-blue BranchViewer_selected__1r9s- BranchViewer_Container__YWrNv">
+                                <span>Vehicle.<strong>speed</strong></span>
+                                <div class="flex m-auto items-center justify-center bg-fuchsia-500 text-white rounded-xl w-4 h-4 ml-2 font-bold p-2"
+                                     style="font-size: 0.6rem; line-height: 0;">W
+                                </div>
+                                <span class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.<strong>Next</strong></span>
+                                <div class="flex m-auto items-center justify-center bg-fuchsia-500 text-white rounded-xl w-4 h-4 ml-2 font-bold p-2"
+                                     style="font-size: 0.6rem; line-height: 0;">W
+                                </div>
+                                <span class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.<strong>Reset</strong></span>
+                                <div class="flex m-auto items-center justify-center bg-fuchsia-500 text-white rounded-xl w-4 h-4 ml-2 font-bold p-2"
+                                     style="font-size: 0.6rem; line-height: 0;">W
+                                </div>
+                                <span class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.<strong>IteratorEnded</strong></span>
+                                <div class="flex m-auto items-center justify-center bg-fuchsia-500 text-white rounded-xl w-4 h-4 ml-2 font-bold p-2"
+                                     style="font-size: 0.6rem; line-height: 0;">W
+                                </div>
+                                <span class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.<strong>ADAS</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-violet-600">branch</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.<strong>ABS</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-violet-600">branch</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.ABS.<strong>IsEnabled</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-yellow-500">actuator</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.ABS.<strong>IsEngaged</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.ABS.<strong>IsError</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.<strong>ActiveAutonomyLevel</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.<strong>CruiseControl</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-violet-600">branch</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.CruiseControl.<strong>IsActive</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-yellow-500">actuator</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.CruiseControl.<strong>IsEnabled</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-yellow-500">actuator</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.CruiseControl.<strong>IsError</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.CruiseControl.<strong>SpeedSet</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-yellow-500">actuator</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.<strong>EBA</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-violet-600">branch</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.EBA.<strong>IsEnabled</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-yellow-500">actuator</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="" href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.ADAS.EBA.<strong>IsEngaged</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class=""
+                           href="">
+                            <div class="flex w-full text-slate-600 text-sm border-gray-100 px-2 leading-loose select-none cursor-pointer hover:bg-blue-50 BranchViewer_Container__YWrNv">
+                                <span>Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.<strong>Phase2</strong></span><span
+                                    class="uppercase text-xs ml-auto pt-1 my-auto font-bold BranchViewer_nodeType__QJbdr text-emerald-500">sensor</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                                     class="ml-auto h-full my-auto text-gray-300 hidden" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.2);">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col w-2/6 h-full overflow-auto">
+                        <code id="code"></code>
+                    <div class="flex">
+                        <button class="flex h-full text-xl items-center px-3 text-inherit w-1/6 text-center text-gray-400 py-2 border-b-2 bg-green-600 rounded-lg shadow-md m-auto"
+                                onclick="runCode()">
+                            Run
+                        </button>
+                        <button class="flex h-full text-xl items-center px-3 text-inherit w-1/6 text-center text-gray-400 py-2 border-b-2 bg-gray-300 rounded-lg shadow-md m-auto">
+                            Build
+                        </button>
+                        <button class="flex h-full text-xl items-center px-3 text-inherit w-1/6 text-center text-gray-400 py-2 border-b-2 bg-gray-300 rounded-lg shadow-md m-auto">
+                            Upload
+                        </button>
+                        <button class="flex h-full text-xl items-center px-3 text-inherit w-1/6 text-center text-gray-400 py-2 border-b-2 bg-gray-300 rounded-lg shadow-md m-auto">
+                            Deploy
+                        </button>
+                        <button class="flex h-full text-xl items-center px-3 text-inherit w-1/6 text-center text-gray-400 py-2 border-b-2 bg-gray-300 rounded-lg shadow-md m-auto">
+                            Debug
+                        </button>
+                        <button class="flex h-full text-xl items-center px-3 text-inherit w-1/6 text-center text-gray-400 py-2 border-b-2 bg-red-500 rounded-lg shadow-md m-auto">
+                            Stop
+                        </button>
+                    </div>
+                    </div>
+                    <div class="flex flex-col w-2/6 h-full overflow-auto">
+                        <div id="terminal"></div>
+                        <img src="/static/cicd.png">
+                    </div>
+                </div>
+            </div>
+            <footer class="flex" style="height:250px">
+                <img src="/static/devops.png" class="w-4/6 h-full">
+                <img src="/static/auto2023.png" class="w-2/6 h-full">
+            </footer>
+        </main>
+    </div>
+</div>
+
+<script type="text/javascript">
+        var myCodeMirror = CodeMirror(document.getElementById('code'), {
+            lineNumbers: true,     // 显示行数
+            indentUnit: 4,         // 缩进单位为4
+            styleActiveLine: true, // 当前行背景高亮
+            matchBrackets: true,   // 括号匹配
+            mode: 'python',        // python
+            lineWrapping: true,    // 自动换行
+            theme: 'idea',         // 使用idea模版
+            value: "print(2+2)"
+            });
+
+        var term = new Terminal();
+        term.open(document.getElementById('terminal'));
+        term.write('ready')
+
+        function runCode(){
+            var pythonCode = myCodeMirror.getValue();
+            var xhr = new XMLHttpRequest();
+            xhr.open('post', 'code');
+            xhr.setRequestHeader('content-type', 'text/plain');
+            xhr.send(pythonCode);
+            xhr.onload = function() {
+                term.reset();
+                term.write(xhr.response);
+            }
+        }
+
+</script>
+</body>
+</html>
